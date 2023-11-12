@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html.css">
+    <title>Links and Images</title>
+</head>
+<body>
+
+    <h2 class="Techmate"><a href="../index.html">TechMate</a></h2>
+
+    <section class="lesson">
+
+    <h1>Links and Images</h1>
+
+    <h2>HTML HYPERLINKS</h2>
+
+    <P>
+        Hyperlinks are used to connect web pages together by linking text on one page with the 
+        same or different text on another webpage. With links in HTML you can link your webpage
+        to other website such as Google, Wikipedia, Facebook and the likes. You also use links
+        to link the different pages of your website together. So when you click on the links,
+        it will take you to that specific page. Here is the Syntax:
+
+        <pre>
+            &lt;a href=&quot;URL&quot;&gt;Text&lt;/a&gt;
+        </pre>
+
+       <b>&lt;a&gt;:</b>  This defines an <i>anchor tag.</i> <br>
+
+       <b>href:</b> The href attribute indicates the link's destination. This is not
+       visible to the reader. <br>
+
+       The <b>Text</b> is the part visible to the user. When the user clicks on this text,
+       he or she is directed to the linked page. <br>
+
+       <b>&lt;/a&gt;:</b> This is the closing of the anchor tag. <br><br>
+
+       Here is an example of a link that leads to Google. <br><br>
+
+       <img src="images/links.PNG" alt="code sample"> <br><br>
+
+
+       <a href="https://www.google.com">Click Here</a> <br><br>
+
+       Usually a link turns <b>blue</b> when the cursor is placed on it. However, this 
+       can be changed with CSS as you will learn later. <br><br>
+
+       By default, links will appear as follows in all browsers:
+
+       <li>An unvisited link is underlined and blue</li>
+       <li>A visited link is underlined and purple</li>
+       <li>An active link is underlined and red</li>
+    </p>
+
+    <h2>HTML Links - The target Attribute</h2>
+
+    <p>
+        By default, the linked page will be displayed in the current browser window. 
+        To change this, you must specify another target for the link. <br><br>
+
+        The <b>target</b> attribute specifies where to open the linked document. <br>
+        The <b>target</b> attribute can have one of the following values: <br><br>
+
+       <li> <b>_self</b> - Default. Opens the document in the same window/tab as it was clicked</li>
+       <li><b>_blank</b> - Opens the document in a new window or tab</li>
+       <li><b>_parent</b> - Opens the document in the parent frame</li>
+       <li><b>_top</b> - Opens the document in the full body of the window</li>
+
+       Now let's use the <b>_blank</b> attribute to direct our previous link to open in a 
+       new window. <br><br>
+
+       <a href="https://www.google.com" target="_blank">Click Here</a> <br><br>
+
+       In the above link, what was added to the previous code is: <b>target="_blank"</b>
+       which will help direct the link to open in a new tab or window.
+    </p>
+
+    <h2>Absolute URLs vs. Relative URLs</h2>
+    <p>
+        An absolute URL contains all parts of a web address (protocol, domain name, path).
+        On the other hand, a relative URL does not contain the protocol and domain name.
+        It only includes the path information. <br><br>
+        For instance, if we were using an image from a website called "example.com",
+        the absolute URL would look like this: <br><br>
+
+        <pre>       http://www.example.com/path/to/image.jpg</pre>
+
+        While the relative URL would simply be: <br><br>
+
+        <pre>       /path/to/image.jpg</pre>
+
+        The relative URL can be used to link a page in the html folder on the current 
+        webpage
+    </p>
+
+    <h2><i>Example 1</i></h2>
+
+    <p>
+        The link below will take us to the <b>HTML Course Outline Page</b> of this website. <br> <br>
+
+        <img src="images/link2.PNG" alt="code sample"> <br><br>
+
+        <a href="html_outline.html">Go to Course Outline</a>
+
+    </p>
+
+    <h3><i>Example 2</i></h3>
+    <p>
+        Let's say we want to include an image from Google. We could do so by using their
+        absolute URL: <br><br>
+
+        <img src="images/link3.PNG" alt="code sample"> <br><br>
+
+        <img src="http://www.google.com/images/logo.png"/> <br><br>
+
+        <img src="https://www.w3schools.com/images/logo.png"/> <br><br>
+
+        Links can be used for images, email, buttons, navigation bar, list e.t.c
+    </p>
+
+                        <!-- Add more resources -->        
+
+    <div class="nav-button">
+        <button class="back-btn"><a href="headings_and_paragraphs.html">BACK</a></button>
+        <button class="next-btn"><a href="html_images.html">NEXT</a></button>          
+    </div>
+</section>
+</body>
+</html>
