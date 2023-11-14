@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html.css">
+    <title>HTML List</title>
+</head>
+<body>
+
+    <h2 class="Techmate"><a href="../index.html">TechMate</a></h2>
+
+    <section class="lesson">
+
+        <h1>HTML List</h1>
+
+        <p>
+            HTML lists are used to group related items together on a webpage. <br><br>
+
+            There are two types of list in HTML: <b>ordered</b> and <b>unordered</b> lists.
+        </p>
+
+        <h1>Unordered List</h1>
+
+        <p>
+            An unordered list is used to list items in no particular ranking or order as the 
+            name implies, <b>Unordered</b>. <br><br>
+
+            An unordered list is created using the <code>&lt;ul&gt;</code> tag. Each item within 
+            an unordered list is represented by the <code>&lt;li&gt;</code> tag. <br><br>
+
+            <b>See example below:</b>
+        </p>
+
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+            </pre>
+
+            <h3>Output:</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <p>
+                Now let's make a list of four car makers in no particular order:
+            </p>
+
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Toyota&lt;/li&gt;
+                    &lt;li&gt;Honda&lt;/li&gt;
+                    &lt;li&gt;Ford&lt;/li&gt;
+                    &lt;li&gt;Chevrolet&lt;/li&gt;
+                &lt;/ul&gt;
+            </pre>
+
+            <h3>Output:</h3>
+            <ul>
+                <li>Toyota</li>
+                <li>Honda</li>
+                <li>Ford</li>
+                <li>Chevrolet</li>
+            </ul>
+      
+        <h1>Ordered List</h1>
+        <p>
+            An ordered list is used to list items in a specific and logical sequence as the
+            name implies, <b>Ordered</b>. <br><br>
+
+            An ordered list is created using the <code>&lt;ol&gt;</code> tag. Each item within
+            an ordered list is represented by the <code>&lt;li&gt;</code> tag. The value inside
+            the opening <code>&lt;li&gt;</code> tag represents the number for that item. If you 
+            don't provide any values it will start from 1 automatically. You can also manually 
+            set the starting point with the attribute <code>start="n"</code>, where n is your 
+            desired starting number. Here are some examples:
+            </p>
+            
+            <pre>
+                &lt;ol&gt;
+                    &lt;li&gt;First Item&lt;/li&gt;
+                    &lt;li&gt;Second Item&lt;/li&gt;
+                    &lt;li&gt;Third Item&lt;/li&gt;
+                &lt;/ol&gt;
+            </pre>
+
+            <h3>Output:</h3>
+            <ol>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ol>
+
+            <pre>
+                &lt;ol start="5"&gt;
+                    &lt;li&gt;Fifth Item&lt;/li&gt;
+                    &lt;li&gt;Sixth Item&lt;/li&gt;
+                    &lt;li&gt;Seventh Item&lt;/li&gt;
+                &lt;/ol&gt;
+            </pre>
+        
+            <h3>Output:</h3>
+            <ol start="5">
+                <li>Fifth Item</li>
+                <li>Sixth Item</li>
+                <li>Seventh Item</li>
+            </ol>
+        </p>
+
+        <div class="note">
+            <p>
+                <b>Note:</b> Ordered lists should be used when listing things in a specific order such as
+                recipes or instructions on how to do something. Unordered lists can be used when listing
+                random information like blog posts or comments. List can also be used when creating a 
+                navigation bar and footer.
+            </p>
+        </div>        
+
+        <h2><i>Exercise</i></h2>
+
+        <ol>
+            <li>
+                Create a navigation bar that contains Home, About, Services, Portfolio and Contact Me
+                for your bio page.
+            </li>
+            <li>
+                Add a list of your hobbies in no particular rank with a heading that says "My Hobiess"
+                above the list to your personal bio page.
+            </li>
+            <li>
+                Create a list of Your top 10 musicians according to their rank.
+            </li>
+        </ol>     
+
+
+            <div class="nav-button">
+                <button class="back-btn"><a href="list.html">BACK</a></button>
+                <button class="next-btn"><a href="tables.html">NEXT</a></button>          
+            </div>
+        </section>
+    </body>
+</html>
